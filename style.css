@@ -1,0 +1,120 @@
+/* Ana ozellikleri tanimlama ve ozellikler sifirlama*/
+body{
+
+    --color--primary: rgba(80, 65, 65, 1); 
+    --color-primary-dark: rgba(178, 195, 178, 0.5);    
+    --color-secondary: rgba(62, 62, 116, 0.5); 
+    --color-error: rgba(215, 33, 33, 0.5);
+    --color-success: rgba(72, 114, 72, 0.5);
+    --border-radius: 5px;
+    --color-main: rgb(40, 83, 32);
+    --color-component: rgb(84, 74, 192);
+
+    
+       
+    
+    background: linear-gradient(to right, var(--color--primary),  var(--color-secondary)), url(Photo.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ana Tasiyici Alani*/
+.container{
+    width: 400px;
+    max-height: 500px;
+    margin: 1rem;
+}
+
+/* Form Alani*/
+.form{
+    text-align: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);  
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: rgba(250, 250, 250, 0.8);  
+}
+
+.form__title{
+    margin-bottom: 1rem;
+    margin-top: 0rem;   
+}
+
+.form__message{
+    color: var(--color-error);   
+}
+
+.form__input-error-message{
+    color: var(--color-error);
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 0.5rem;
+
+
+
+}
+.form__input--group{
+   margin-bottom: 1rem; 
+   margin-top: 1rem;
+}
+.form__input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    border-radius: var(--border-radius);
+    outline: none;
+    border: 2px solid #ac9898;
+    background-color: #a5c3c9;
+    transition: background 0.3, border-color 0.3;
+
+}
+.form__input:focus{
+    border-color: var(--color--main);
+    background-color: rgb(80, 166, 174);
+
+}
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: rgb(213, 225, 216);
+    border: none;
+    outline: none;
+    background-color: var(--color--primary);
+}
+.form__button:hover{
+    background-color: var(--color-success);   
+}
+.form__button:active{
+    transform: scale(0.9);
+}
+.form__link{
+    color: var(--color-component);
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: -10px;   
+}
+.form__link:hover{
+    color: var(--color-primary-dark);
+}
+
+.form__text{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;   
+}
+
+.form__text_for_all{
+    margin: 10px;    
+}
